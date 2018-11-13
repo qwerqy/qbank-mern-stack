@@ -1,0 +1,13 @@
+.ui.input {
+  width: 100%;
+}
+
+.searchbarContainer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Blurring on modal popup */
+.blurring.dimmable > .dimmer {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
