@@ -23,7 +23,7 @@ class SearchContainer extends Component {
                   <Modal.Content>
                     <Form
                       as="form"
-                      action="/upload"
+                      action="/api/questions"
                       method="POST"
                       encType="multipart/form-data"
                     >
