@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Loader, Container } from "semantic-ui-react";
 
 export default class Questions extends Component {
   state = {};
@@ -23,6 +24,19 @@ export default class Questions extends Component {
   };
 
   render() {
-    return <div>TEst</div>;
+    const { surveys } = this.state;
+    return (
+      <Container>
+        <ul>
+          {surveys && surveys.length ? (
+            Object.keys(surveys).map(key => {
+              return <li key={surveys[key]._id}>{surveys[key].name}</li>;
+            })
+          ) : (
+            <Loader indeterminate>Getting the surveys for you..</Loader>
+          )}
+        </ul>
+      </Container>
+    );
   }
 }
