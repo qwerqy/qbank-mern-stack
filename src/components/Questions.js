@@ -63,7 +63,9 @@ export default class Questions extends Component {
             );
           })
         ) : (
-          <Loader indeterminate>Getting the surveys for you..</Loader>
+          <Loader active inline="centered" indeterminate>
+            Getting the surveys for you..
+          </Loader>
         )}
       </Container>
     );
